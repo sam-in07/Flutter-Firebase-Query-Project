@@ -1,7 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_query/home_page.dart';
 
-void main() {
+void main()  async{
+  WidgetsFlutterBinding.ensureInitialized();
+  // Initialize Firebase
+  await Firebase.initializeApp();
+  //Initial Google Admob
+
   runApp(const MyApp());
 }
 
