@@ -76,6 +76,7 @@ class DefaultFirebaseOptions {
     iosBundleId: 'com.example.flutterFirebaseQuery',
   );
 
+
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyA80C3XgwIJUJAsz-eEY5rHqWNSrnYmRDM',
     appId: '1:1080113242483:web:a94b45b8da333641f8e506',

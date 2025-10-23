@@ -1,6 +1,6 @@
 # flutter_firebase_query
 
-A new Flutter project on Firebase 
+A new Flutter project on Firebase                                        
 
 ## Getting Started
 
