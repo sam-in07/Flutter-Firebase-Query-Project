@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_query/pages/create_survey_page.dart';
+import 'package:flutter_firebase_query/pages/survey_list_page.dart';
+import 'package:flutter_firebase_query/pages/survey_responses_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,20 +32,20 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
-            // _buildFeatureCard(
-            //   context,
-            //   title: 'View Surveys',
-            //   description: 'Browse all surveys with real-time updates',
-            //   icon: Icons.list_alt,
-            //   color: Colors.blue,
-            //   onTap:
-            //       () => Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //       builder: (context) => const SurveyListPage(),
-            //     ),
-            //   ),
-            // ),
+            _buildFeatureCard(
+              context,
+              title: 'View Surveys',
+              description: 'Browse all surveys with real-time updates',
+              icon: Icons.list_alt,
+              color: Colors.blue,
+              onTap:
+                  () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SurveyListPage(),
+                ),
+              ),
+            ),
             const SizedBox(height: 16),
             _buildFeatureCard(
               context,
@@ -60,20 +62,20 @@ class HomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            // _buildFeatureCard(
-            //   context,
-            //   title: 'Survey Responses',
-            //   description: 'View and manage survey responses',
-            //   icon: Icons.analytics,
-            //   color: Colors.orange,
-            //   onTap:
-            //       () => Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //       builder: (context) => const SurveyResponsesPage(),
-            //     ),
-            //   ),
-            // ),
+            _buildFeatureCard(
+              context,
+              title: 'Survey Responses',
+              description: 'View and manage survey responses',
+              icon: Icons.analytics,
+              color: Colors.orange,
+              onTap:
+                  () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SurveyResponsesPage(),
+                ),
+              ),
+            ),
             const SizedBox(height: 32),
             Card(
               child: Padding(
